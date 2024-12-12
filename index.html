@@ -4,32 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Clash Pro </title>
-    <!--daisyUI and Tailwind -->
+    <title>Alpha Clash Pro</title>
+
+    <!-- DaisyUI and Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Custom Css -->
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styels/styels.css">
 </head>
 
 <body class="font-poppins">
     <main class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
         <!-- Home Screen -->
-        <section id="home-screen" class="home  min-h-screen text-white flex 
-        justify-center  items-center ">
+        <section id="home-screen" class="home min-h-screen text-white flex justify-center items-center">
             <div class="flex flex-col items-center gap-10">
                 <h1 class="text-8xl font-anton uppercase">ALPHABET CLASH</h1>
                 <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button onclick="play()" class=" btn bg-[#FFFFFF] text-black ">Play Now</button>
-
+                <button onclick="play()" class="btn bg-[#FFFFFF] text-black">Play Now</button>
             </div>
         </section>
+
         <!-- Play Ground -->
-        <section id="play-ground" class=" hidden ">
+        <section id="play-ground" class="hidden">
             <div class="flex flex-col items-center gap-20 pt-20">
                 <!-- Screen -->
-                <div class="artboard artboard-horizontal phone-6 border-[20px]
-                                    rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
+                <div
+                    class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
                     <div class="flex justify-center">
                         <p class="text-white bg-[#2F2941FF] px-4 pb-3 rounded-b-xl">Don't watch keyboard while
                             playing...</p>
@@ -38,7 +39,8 @@
                         <p id="current-alphabet" class="text-black text-9xl font-bold uppercase">Y</p>
                     </div>
                 </div>
-                <!-- Keyboard  Start-->
+
+                <!-- Keyboard Start -->
                 <div>
                     <div class="my-1 flex w-full justify-center gap-1">
                         <kbd id="q" class="kbd">q</kbd>
@@ -74,29 +76,31 @@
                         <kbd id="/" class="kbd">/</kbd>
                     </div>
                 </div>
-                <!-- Keyboard  End-->
-                <!-- Life score -->
-                <div class="flex justify-between w-3/4 ">
-                    <!-- display life -->
-                    <button class="btn rounded-full bg-[#894189FF] text-white Px-4"> Life
+                <!-- Keyboard End -->
+
+                <!-- Life and Score -->
+                <div class="flex justify-between w-3/4">
+                    <!-- Display Life -->
+                    <button class="btn rounded-full bg-[#894189FF] text-white px-4">
+                        Life
                         <img src="images/dolar (2).svg" alt="">
                         <span id="current-life">5</span>
                     </button>
-                    <!-- display score -->
-                    <button class="btn rounded-full bg-[#360490FF] text-white px-4"> Score
+                    <!-- Display Score -->
+                    <button class="btn rounded-full bg-[#360490FF] text-white px-4">
+                        Score
                         <img src="images/dolar (1).svg" alt="">
                         <span id="current-score">0</span>
                     </button>
-
                 </div>
-
             </div>
         </section>
-        <!-- Play Ground end-->
-        <!-- final score start -->
-        <section id="final-score" class=" flex justify-center items-center min-h-screen hidden">
-            <div class="text-white text-center space-y-6 bg-[#FFFFFF33]  p-4 rounded-lg ">
-                <h4 class="text-3xl">Game Over !</h4>
+        <!-- Play Ground End -->
+
+        <!-- Final Score Start -->
+        <section id="final-score" class="flex justify-center items-center min-h-screen hidden">
+            <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg">
+                <h4 class="text-3xl">Game Over!</h4>
                 <h1 class="text-8xl font-bold">
                     <span class="font-extrabold">Score: </span>
                     <span id="last-score" class="font-bold">14</span>
@@ -105,7 +109,9 @@
                 <p>Practice will make you Pro</p>
             </div>
         </section>
+        <!-- Final Score End -->
     </main>
+
     <!-- Script Section -->
     <script src="script/alpha-clash.js"></script>
     <script src="script/utiliti.js"></script>
