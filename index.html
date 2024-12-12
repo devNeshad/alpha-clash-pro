@@ -51,7 +51,7 @@
                         <kbd id="i" class="kbd">i</kbd>
                         <kbd id="o" class="kbd">o</kbd>
                         <kbd id="p" class="kbd">p</kbd>
-                </div>
+                    </div>
                     <div class="mj1 flex w-full justify-center gap-1">
                         <kbd id="a" class="kbd">a</kbd>
                         <kbd id="s" class="kbd">s</kbd>
@@ -77,14 +77,15 @@
                 <!-- Keyboard  End-->
                 <!-- Life score -->
                 <div class="flex justify-between w-3/4 ">
+                    <!-- display life -->
                     <button class="btn rounded-full bg-[#894189FF] text-white Px-4"> Life
                         <img src="images/dolar (2).svg" alt="">
-                        <span>1</span>
+                        <span id="current-life">5</span>
                     </button>
-
+                    <!-- display score -->
                     <button class="btn rounded-full bg-[#360490FF] text-white px-4"> Score
                         <img src="images/dolar (1).svg" alt="">
-                        <span>1</span>
+                        <span id="current-score">0</span>
                     </button>
 
                 </div>
@@ -93,13 +94,14 @@
         </section>
         <!-- Play Ground end-->
         <!-- final score start -->
-        <section class="score flex justify-center items-center min-h-screen hidden">
+        <section id="final-score" class=" flex justify-center items-center min-h-screen hidden">
             <div class="text-white text-center space-y-6 bg-[#FFFFFF33]  p-4 rounded-lg ">
+                <h4 class="text-3xl">Game Over !</h4>
                 <h1 class="text-8xl font-bold">
                     <span class="font-extrabold">Score: </span>
-                    <span class="font-bold">14</span>
+                    <span id="last-score" class="font-bold">14</span>
                 </h1>
-                <button class="btn bg-[#FFFFFF] text-black">Play Again</button>
+                <button onclick="play()" class="btn bg-[#FFFFFF] text-black">Play Again</button>
                 <p>Practice will make you Pro</p>
             </div>
         </section>
